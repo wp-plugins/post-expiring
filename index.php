@@ -27,7 +27,7 @@ class ExpiringPosts {
 		if ( is_admin() AND ( !$query->is_main_query() || !is_feed() ) ) return $clauses;
 		$current_date = date('Y-m-d', strtotime('NOW'));
 		$clauses['join'] .= " LEFT JOIN $wpdb->postmeta AS exp ON ($wpdb->posts.ID = exp.post_id AND exp.meta_key = 'postexpired')";
-		$clauses['where'] .= " AND ( (exp.meta_key = 'postexpired' AND CAST(exp.meta_value AS CHAR) >= '".$current_date."') OR exp.post_id IS NULL )";
+		$clauses['where'] .= " AND ( (exp.meta_key = 'postexpired' AND CAST(exp.meta_value AS CHAR) > '".$current_date."') OR exp.post_id IS NULL )";
 		return $clauses;
 	}
 	
@@ -45,10 +45,8 @@ class ExpiringPosts {
 	public function manage_post_posts_custom_column( $column_name, $id ){
 		global $post;
 		if( $column_name === 'expiring' ){
-			echo '<div class="thumb-wrapper">';
 			$postexpired = get_post_meta( $post->ID, 'postexpired', true );
 			echo !empty($postexpired) ? $postexpired : __('Never');
-			echo"</div>";
 		}
 	}
 	
