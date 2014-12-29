@@ -19,8 +19,8 @@ Small improvements to the code
 
 == Installation ==
 To do a new installation of the plugin, please follow these steps
-
-1. Download the broken-link-checker.zip file to your computer.
+1. Install plugin in dashboard and activate or:
+1. Download the post-expiring.zip file to your computer.
 2. Unzip the file
-3. Upload broken-link-checker folder to the /wp-content/plugins/ directory
+3. Upload post-expiring folder to the /wp-content/plugins/ directory
 4. Activate the plugin through the 'Plugins' menu in WordPress
