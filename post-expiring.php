@@ -34,7 +34,7 @@ class ExpiringPosts {
 	public function enqueue_scripts( $hook ) {
 		if( 'post.php' != $hook ) return;
 		wp_enqueue_script( 'jquery-ui-datepicker' );
-		wp_enqueue_script( 'post-expiring', plugins_url('admin.js', __FILE__), array('jquery'), null, true );
+		wp_enqueue_script( 'post-expiring', plugins_url('assets/js/admin.js', __FILE__), array('jquery'), null, true );
 	}
 		
 	public function manage_post_posts_columns( $columns ){
