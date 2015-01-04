@@ -1,5 +1,6 @@
 === Post Expiring ===
 Contributors: potreb
+Author URI: http://potrebka.pl
 Tags: expiring, expired, date of deactivation , date of expiring, posts expiring, expired post
 Tested up to: 4.1
 Stable tag: 1.1
