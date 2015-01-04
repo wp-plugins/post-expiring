@@ -12,7 +12,7 @@ Allows you to add an expiration date to posts.
 
 == Changelog ==
 = 1.1 =
-Small improvements to the code
+Small improvements to the code. Change plugin file structure.
 = 1.0 =
 * Make plugin
 
