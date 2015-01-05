@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Post Expiring
  * Description: Allows you to add an expiration date to posts.
- * Version: 1.0
+ * Version: 1.1
  * Author: Piotr Potrebka
  * Author URI: http://potrebka.pl
  * License: GPL2
