@@ -10,6 +10,7 @@ Expire post by set the date of expiring
 
 == Description ==
 Allows you to add an expiration date to posts.
+[youtube https://www.youtube.com/watch?v=EYGoW6HMyuk]
 
 == Changelog ==
 = 1.1 =
