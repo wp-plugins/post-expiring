@@ -3,7 +3,7 @@ Contributors: potreb
 Author URI: http://potrebka.pl
 Tags: expiring, expired, date of deactivation , date of expiring, posts expiring, expired post
 Tested up to: 4.1
-Stable tag: 1.1
+Stable tag: 1.2
 Requires at least: 3.8
 
 Expire post by set the date of expiring 
@@ -12,6 +12,8 @@ Expire post by set the date of expiring
 Allows you to add an expiration date to posts.
 
 == Changelog ==
+= 1.1 =
+Add expiring date support for page post type. Now only works with posts and pages.
 = 1.1 =
 Small improvements to the code. Change plugin file structure.
 = 1.0 =
