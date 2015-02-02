@@ -25,7 +25,7 @@ jQuery(document).ready( function($) {
 	jQuery('.expiring-datepicker').datepicker({ dateFormat : 'yy-mm-dd' });
 	//$.datepicker.setDefaults($.datepicker.regional['pl']);
 })
-
+/*
 jQuery(function($){
 	$.datepicker.regional['pl'] = {
 			closeText: 'Zamknij',
@@ -46,4 +46,4 @@ jQuery(function($){
 			showMonthAfterYear: false,
 			yearSuffix: ''};
 	$.datepicker.setDefaults($.datepicker.regional['pl']);
-});
+});*/

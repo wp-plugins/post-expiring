@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Post Expiring
  * Description: Allows you to add an expiration date to posts.
- * Version: 1.2
+ * Version: 1.3
  * Author: Piotr Potrebka
  * Author URI: http://potrebka.pl
  * License: GPL2
@@ -38,6 +38,7 @@ class ExpiringPosts {
 		if( 'post.php' != $hook ) return;
 		wp_enqueue_script( 'jquery-ui-datepicker' );
 		wp_enqueue_script( 'post-expiring', plugins_url('assets/js/admin.js', __FILE__), array('jquery'), null, true );
+		wp_enqueue_style( 'post-expiring', plugins_url('assets/css/post-expiring.css', __FILE__) );
 	}
 		
 	public function manage_posts_columns( $columns ){
