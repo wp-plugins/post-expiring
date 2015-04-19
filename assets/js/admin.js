@@ -21,11 +21,4 @@ jQuery(document).ready( function($) {
 		$('.expiring-datepicker').val( edate );
 		return false;
 	});
-	
-	$('.expiring-datepicker').datetimepicker({
-		format:'Y-m-d H:i',
-		lang: 'pl',
-		timepickerScrollbar:false
-	});
-
 })

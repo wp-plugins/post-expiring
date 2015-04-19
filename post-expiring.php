@@ -91,6 +91,7 @@ class ExpiringPosts {
 	}
 	
 	public function add_expiring_field() {
+		
 		global $post;
 		if( !$post->post_type OR ( $post->post_type != 'page' AND $post->post_type != 'post' ) ) return;
 		$screen = get_current_screen();
@@ -99,7 +100,18 @@ class ExpiringPosts {
 		if( preg_match("/^\d{4}-\d{2}-\d{2}$/", $postexpired) ) {
 			$postexpired .= ' 00:00';
 		}
+		$lang = explode( '-', get_bloginfo( 'language' ) );
+		$lang = isset($lang[0]) ? $lang[0] : 'en';
 		?>
+		<script>
+		jQuery(document).ready( function($) {
+			$('.expiring-datepicker').datetimepicker({
+				format:'Y-m-d H:i',
+				lang: '<?php echo $lang; ?>',
+				timepickerScrollbar:false
+			});
+		})
+		</script>
 		<div class="misc-pub-section curtime misc-pub-curtime">
 			<span id="timestamp"><?php _e('Expiring:', 'postexpiring'); ?></span> <span class="setexpiringdate"><?php echo !empty($postexpired) ? $postexpired : __('Never'); ?></span>
 			<a href="#edit_expiringdate" class="edit-expiringdate hide-if-no-js"><span aria-hidden="true"><?php _e( 'Edit' ); ?></span> <span class="screen-reader-text"><?php _e('Edit expiring date', 'postexpiring'); ?></span></a>
